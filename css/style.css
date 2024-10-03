@@ -1,0 +1,157 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ff5a5f;
+}
+
+header .Logo img {
+    width: 150px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    display: inline;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    margin-top: 20px;
+}
+
+main section:first-of-type {
+    background: url('/img/bg.png') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main section:first-of-type img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+main section:first-of-type p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+main section:first-of-type input {
+    width: 350px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section:first-of-type input:focus {
+    box-shadow: 0 0 10px rgba(255, 90, 95, 0.8);
+}
+
+/* Food Delivery Info Section */
+main section.food-delivery-info {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: left;
+}
+
+main section.food-delivery-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff5a5f;
+}
+
+main section.food-delivery-info p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+main section.food-delivery-info .features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+main section.food-delivery-info .features div {
+    width: 30%;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section.food-delivery-info .features div h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+main section.food-delivery-info .features div p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main section.food-delivery-info .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    main section.food-delivery-info .features div {
+        width: 100%;
+    }
+}
